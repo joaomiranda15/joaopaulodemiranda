@@ -1,0 +1,110 @@
+:root{
+  --cor-do-titulo: #FFD700;
+  --cor-fundo: #FAFAFA;
+  --cor-nav-back: #3498db;
+  --cor-subtitulo: #6A5ACD;
+  --cor-paragrafo: #333333;
+  --cor-footer: #444444;
+  --background-do-main: #E6E6FA;
+  --texto-nav: #ffffff;
+  --menu-hover: #FFD700;
+  --cor-botao: #6A5ACD;
+  --cor-botao-hover: #483D8B;
+  --cor-link: #3498db;
+  --cor-link-hover: #FFD700;
+  --cor-botao-nav: #3A35DB;
+  --preto: #000000;
+}
+
+body{
+  margin: 0;
+  font-family: Arial;
+  font-size: 16px;
+  background: var(--cor-fundo);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+main{
+    width: 60%;
+    margin: 20px auto;
+    background: var(--background-do-main);
+    border-radius:10px;
+    text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--cor-nav-back);
+  color: var(--texto-nav);
+}
+
+nav ul li a{
+  background-color: var(--cor-botao-nav);
+  color: var(--texto-nav);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover{
+  background-color: var(--cor-do-titulo);
+  color: var(--preto);
+}
+
+header {
+  position: relative;
+  background-image: url(/img/banner_violencia_idoso.png);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.7), 
+    rgba(0,0,0,0.3)
+  );
+}
+
+.titulo {
+  position: relative;
+  font-size: 34px;
+  color: var(--cor-do-titulo);
+  text-shadow: 2px 2px 4px #000000; 
+  z-index: 1;
+}
+
+.subtitulo{
+    font-size: 26px;
+    color: var(--cor-subtitulo);
+}
+
+.paragrafos{
+    font-size: 18px;
+    color: var(--cor-paragrafo);
+    text-align: justify;
+    padding: 20px;
+}
+
+footer{
+  font-size: 12px;
+  color: var(--cor-footer);
+  text-align: center;
+}
