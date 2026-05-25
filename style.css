@@ -1,5 +1,5 @@
 :root{
-  --cor-do-titulo: #FFD700;
+  --cor-do-titulo: #ffffff;
   --cor-fundo: #FAFAFA;
   --cor-nav-back: #3498db;
   --cor-subtitulo: #6A5ACD;
@@ -64,14 +64,43 @@ nav ul li a:hover{
 
 header {
   position: relative;
-  background-image: url(/img/banner_violencia_idoso.png);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
+
+header video {
+  position: absolute;                 /* posiciona em relação ao header */
+  top: 0;                             /* gruda no topo */
+  left: 0;                            /* gruda na esquerda */
+  width: 100%;                        
+  height: 100%;                       
+  object-fit: cover;                  /* preenche sem distorcer, corta o que sobra */
+  z-index: 0;                         /* fica atrás do conteúdo */
+}
+
+.ex2::before {
+  content: "";                        /* obrigatório para criar o pseudo-elemento */
+  position: absolute;                 /* posiciona em cima do vídeo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);     /* preto 50% transparente */
+  z-index: 1;                         /* entre o vídeo (0) e o texto (2) */
+}
+
+.conteudo {
+  position: relative;                 /* necessário para o z-index funcionar */
+  z-index: 2;                         /* fica na frente do vídeo */
+  height: 100%;                       /* ocupa toda a altura do banner */
+  display: flex;                      /* ativa layout flexível */
+  flex-direction: column;             /* empilha os itens verticalmente */
+  justify-content: center;            /* centraliza verticalmente */
+  align-items: center;                /* centraliza horizontalmente */
+  text-align: center;                 
+  padding: 20px;                      
+}
+
 
 header::before {
   content: "";
