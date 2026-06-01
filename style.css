@@ -1,13 +1,12 @@
 :root{
   --cor-do-titulo: #ffffff;
-  --cor-fundo: #FAFAFA;
+  --cor-fundo: #F5EEF8;
   --cor-subtitulo: #705E73;
-  --cor-paragrafo: #333333;
-  --cor-footer: #444444;
+  --cor-paragrafo: #3D2840;
+  --cor-footer: #705E73;
   --background-do-main: #CE7ED9;
   --texto-nav: #ffffff;
   --cor-botao-hover: #fafafa;
-  --cor-link: #3498db;
   --background-nav: #3D2840;
 }
 
