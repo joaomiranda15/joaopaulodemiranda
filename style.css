@@ -154,13 +154,6 @@ header::before {
     color: var(--cor-subtitulo);
 }
 
-.subtitulo-2{
-  font-size: 26px;
-  color: var(--cor-subtitulo);
-  text-align: left;
-  padding: 15px;
-}
-
 .paragrafos{
     font-size: 18px;
     color: var(--cor-paragrafo);
