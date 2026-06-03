@@ -166,3 +166,7 @@ footer{
   color: var(--cor-footer);
   text-align: center;
 }
+
+main img{
+  width: 650px;
+}
