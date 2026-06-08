@@ -3,11 +3,12 @@
   --cor-fundo: #F5EEF8;
   --cor-subtitulo: #705E73;
   --cor-paragrafo: #3D2840;
-  --cor-footer: #705E73;
+  --cor-footer: #3D2840;
   --background-do-main: #CE7ED9;
   --texto-nav: #ffffff;
   --cor-botao-hover: #fafafa;
   --background-nav: #3D2840;
+  --back-footer: #A181A6;
 }
 
 body{
@@ -164,7 +165,7 @@ header::before {
 footer{
   font-size: 12px;
   color: var(--cor-footer);
-  text-align: center;
+  text-align: center; background-color: var(--back-footer);
 }
 
 main img{
