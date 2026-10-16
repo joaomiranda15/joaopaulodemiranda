@@ -32,6 +32,14 @@ main{
     text-align: center;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 nav {
   position: relative;
   z-index: 2;
@@ -105,7 +113,7 @@ header video {
   width: 100%;                        
   height: 100%;                       
   object-fit: cover;                  /* preenche sem distorcer, corta o que sobra */
-  z-index: 0;                         /* fica atrás do conteúdo */
+  z-index: 0; 
 }
 
 .ex2::before {
@@ -171,4 +179,25 @@ footer{
 
 main img{
   width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+.menu-toggle{
+  display: block;
+  color: var(--texto-nav);
+  justify-content: end;
+  }
+
+nav ul{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: var(--background-nav);
+}
+nav ul{
+  display: flex;
+}
 }
